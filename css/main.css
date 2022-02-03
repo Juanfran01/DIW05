@@ -1,0 +1,176 @@
+* {
+    font-family: 'Nunito', Verdana, sans-serif;
+}
+
+body.login {
+    background-color: #34889c;
+    background: linear-gradient(to right, #34889c, #4678c8);
+}
+
+
+.bg-login {
+    background-image: url('../img/login.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main-page {
+    background-color: #f8f9fc;
+}
+
+.callout-primary {
+     border-left-width: 6px;
+     border-left-color: #428bca;
+}
+.callout-success {
+    border-left-width: 6px;
+    border-left-color: #1cc88a;
+}
+.callout-info {
+    border-left-width: 6px;
+    border-left-color: #36b9cc;;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+
+/*Nuevo Menú - Parte superior de la página*/
+nav{
+    background: #2fcdcd;
+    /*background: #212529;*/
+    height: 80px;
+    width: 100%;
+}
+
+.titulo{
+    position: absolute;
+    padding: 20px 50px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active, li a:hover{
+    background: #000090;
+    color: #ffffff;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.bi-table, .bi-person-square, .bi-pc-display-horizontal, .bi-file-bar-graph-fill, .bi-journal, .bi-x-square-fill{
+   margin-top: -2%;
+}
+
+
+/*Responsive a partir de 800px*/
+@media screen and (max-width: 800px) {
+    
+    /*Eliminamos la imagen para que solo se vea el login, password, etc...*/
+    .bg-login{
+        display: none;
+    }
+
+    /*Quitamos columnas que no nos interesa de la tabla.*/
+    .ventas {
+        display: none;
+    }
+    
+    .codigo{
+        display: none;
+    }
+
+    .categoria{
+        display: none;
+    }
+
+    .table-striped{
+        height: 5%;
+    }
+
+    /*Adpatamos el menú para que solo salgan iconos y texto.*/
+    nav{
+        background: #2fcdcd;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+    nav ul li a{
+        font: 0/0 a;
+        text-decoration: none;
+      }
+
+    .bi-table, .bi-person-square, .bi-pc-display-horizontal, .bi-file-bar-graph-fill, .bi-journal, .bi-x-square-fill{
+        visibility: visible;
+        margin-top: -2%;
+    }
+
+    li a.active, li a:hover{
+        background-color: inherit;
+        color: black;
+    }
+
+    .row, .card-body, h3{
+        font-size: 80%;
+    }
+
+
+    /*Adaptamos la tabla para que tenga otro formato y no se pueda hacer scroll horizontalmente*/
+    table {
+        width:100%;
+    }
+ 
+    thead {
+        display: none;
+    }
+ 
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+ 
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+ 
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+ 
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+
+    /*Pie de página*/
+     #footer {
+        text-align:center;
+        padding:1em;
+     }
+}
