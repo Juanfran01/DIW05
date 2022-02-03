@@ -138,6 +138,9 @@ li a.active, li a:hover{
         font-size: 80%;
     }
 
+    .row{
+        display: inline-table;
+    }
 
     /*Adaptamos la tabla para que tenga otro formato y no se pueda hacer scroll horizontalmente*/
     table {
