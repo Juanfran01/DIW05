@@ -93,6 +93,14 @@ li a.active, li a:hover{
         display: none;
     }
 
+    form, h2{
+        margin-right: 25%;
+    }
+
+    .mb-4{
+        margin-right: 10%;
+    }
+
     /*Quitamos columnas que no nos interesa de la tabla.*/
     .ventas {
         display: none;
