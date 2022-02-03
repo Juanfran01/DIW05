@@ -140,7 +140,12 @@ li a.active, li a:hover{
 
     .row{
         display: inline-table;
-    }
+		margin-left: 19%;
+	}
+	
+	.my-3{
+		text-align: center;
+	}
 
     /*Adaptamos la tabla para que tenga otro formato y no se pueda hacer scroll horizontalmente*/
     table {
